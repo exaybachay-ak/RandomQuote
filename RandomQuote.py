@@ -14,11 +14,11 @@ def getQuote():
 
 	###--->>> If we get the green light, parse the quote
 	if r.status_code == 200:
-			# Retrieve the HTML elements from response data
-			tree = html.fromstring(r.content)
-			quotetitle = tree.xpath('//title/text()')
-			global q
-			q = quotetitle[0]
+		# Retrieve the HTML elements from response data
+		tree = html.fromstring(r.content)
+		quotetitle = tree.xpath('//title/text()')
+		global q
+		q = quotetitle[0]
 
 	###--->>> If there is an issue, say something
 	else:

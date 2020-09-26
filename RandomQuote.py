@@ -1,6 +1,5 @@
 ###--->>> Random quote from quotes.net <<<---###
 import requests
-import re
 import random
 from lxml import html
 
